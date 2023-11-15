@@ -1,0 +1,9 @@
+.Todo-Item{
+  border:1px solid black;
+  width: 100px;
+  margin: 20px auto;
+  text-align: left;
+}
+.container{
+ text-align: center;
+}
