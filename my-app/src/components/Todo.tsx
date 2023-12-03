@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import TodoItem from './TodoItem'
+import api from "./useApi"
 const Todo = () => {
     const [a,setA]=useState<string>("")
     const [arr,setArr]=useState<string[]>([])
@@ -7,6 +8,7 @@ const Todo = () => {
     const [index,setIndex]=useState<number>(0)
     const [s,setS]=useState<number[]>([])
     const HandleClick=()=>{
+      console.log()
         let t:string[]=[...arr,a]
         console.log(t)
         setArr(t)
