@@ -45,10 +45,14 @@ const Todo = () => {
     <div className="container">
       <h1>Todo List</h1>
         <input type="text" onChange={(e)=>setA(e.target.value)} value={a} placeholder='type....'/>
-        {(h==true)?<button className='btn' onClick={HandleClick}>Add</button>:<button className='btn' onClick={HandleUpdate}>Update</button>}
+        {(h==true)?<button className='btn' onClick={HandleClick}>
+          Add</button>:<button className='btn' onClick={HandleUpdate}>Update</button>}
         {arr&&arr.map((item,i)=>{
             return(
-                 <TodoItem s={s} HandleDone={HandleDone} item={item} key={i} index={i} HandleDelete={HandleDelete} HandleEdit={HandleEdit} h={h} HandleUpdate={HandleUpdate}/>
+
+                 <TodoItem s={s} HandleDone={HandleDone} item={item} key={i}
+                  index={i} HandleDelete={HandleDelete} HandleEdit={HandleEdit} h={h} 
+                  HandleUpdate={HandleUpdate}/>
             )
             
         })}
